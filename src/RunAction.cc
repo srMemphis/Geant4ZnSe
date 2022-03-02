@@ -15,7 +15,11 @@ RunAction::RunAction():
     analysisManager->CreateNtupleDColumn("X");
     analysisManager->CreateNtupleDColumn("Y");
     analysisManager->CreateNtupleDColumn("Z");
-    analysisManager->FinishNtuple();
+    analysisManager->FinishNtuple(0);
+
+    analysisManager->CreateNtuple("Amplitude", "Amplitude");
+    analysisManager->CreateNtupleDColumn("Counts");
+    analysisManager->FinishNtuple(1);
 
 }
 
@@ -32,7 +36,7 @@ G4Run* RunAction::GenerateRun()
 void RunAction::BeginOfRunAction(const G4Run*)
 {
     G4AnalysisManager *analysisManager = G4AnalysisManager::Instance();
-    analysisManager->OpenFile("3.50.root");
+    analysisManager->OpenFile("4.00.root");
 }
 
 void RunAction::EndOfRunAction(const G4Run*)

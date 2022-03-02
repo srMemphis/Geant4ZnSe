@@ -12,6 +12,8 @@ PhysicsList::PhysicsList()
     params->SetScintTrackSecondariesFirst(true);
     params->SetCerenkovTrackSecondariesFirst(true);
     // params->SetProcessActivation("Cerenkov", false);
+    // params->SetProcessActivation("Scintillation", false);
+
 }
 
 PhysicsList::~PhysicsList()
