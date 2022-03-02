@@ -97,7 +97,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   	}
 	
 	myMPT1->AddProperty("SCINTILLATIONCOMPONENT1", photonEnergy, scintilSlow, false, true);
-	myMPT1->AddConstProperty("SCINTILLATIONYIELD", 40. /keV); //40. /keV
+	myMPT1->AddConstProperty("SCINTILLATIONYIELD", 0.4 /keV); //40. /keV
 	myMPT1->AddConstProperty("RESOLUTIONSCALE", 1.0);
 	myMPT1->AddConstProperty("SCINTILLATIONTIMECONSTANT1", 20. * ns); //varies 20-70
 
@@ -168,8 +168,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 	// rot->rotateY(90*deg);
 
 	//----------------------------scintillator---------------------------------
-	float sc_thic = 3.50*mm;
-	float shift = 1*mm;     //distance from origin to scint frontal plane
+	float sc_thic = 4.00*mm;
+	float shift = 0.01*mm;     //distance from origin to scint frontal plane
 
 	G4Box *sScint = new G4Box("Scintillator", sc_thic/2, 6*mm/2, 6*mm/2);
 	// G4Tubs *sScint = new G4Tubs("Scintillator", 0 , 3*mm, sc_thic/2, 0, CLHEP::twopi);
