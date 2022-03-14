@@ -2,6 +2,7 @@
 #define SENSITIVE_DETECTOR_HH
 
 #include "G4VSensitiveDetector.hh"
+#include "G4AnalysisManager.hh"
 
 class SensitiveDetector : public G4VSensitiveDetector
 {
@@ -16,7 +17,8 @@ public:
 
 protected:
 
-    
+    G4AnalysisManager* analysisManager;
+    double fSignalAmplitude;
 };
 
 #endif
