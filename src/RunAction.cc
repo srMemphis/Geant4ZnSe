@@ -18,7 +18,7 @@ RunAction::RunAction():
     analysisManager->FinishNtuple(0);
 
     analysisManager->CreateNtuple("Amplitude", "Amplitude");
-    analysisManager->CreateNtupleDColumn("Counts");
+    analysisManager->CreateNtupleDColumn("Amplitude");
     analysisManager->FinishNtuple(1);
 
 }
