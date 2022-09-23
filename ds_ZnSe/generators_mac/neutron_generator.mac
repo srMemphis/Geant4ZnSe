@@ -1,0 +1,45 @@
+/gps/particle neutron
+/gps/pos/type Point
+/gps/pos/centre 0. 0. -0.2 cm
+/gps/ang/type iso
+/gps/ang/mintheta 90 deg
+/gps/ang/maxtheta 180 deg
+/gps/ene/type Arb
+/gps/hist/type arb
+/gps/hist/point 0.045415 0.0306375
+/gps/hist/point 0.070632 0.0331063
+/gps/hist/point 0.10215 0.0378268
+/gps/hist/point 0.12107 0.040623
+/gps/hist/point 0.18411 0.0441406
+/gps/hist/point 0.25346 0.0483427
+/gps/hist/point 0.32911 0.0515609
+/gps/hist/point 0.40476 0.0544429
+/gps/hist/point 0.62226 0.058414
+/gps/hist/point 0.86812 0.0582757
+/gps/hist/point 1.1424 0.0547669
+/gps/hist/point 1.3315 0.0519479
+/gps/hist/point 1.5206 0.0487507
+/gps/hist/point 1.6908 0.0457374
+/gps/hist/point 1.8421 0.0426488
+/gps/hist/point 1.9934 0.0397633
+/gps/hist/point 2.1447 0.0369093
+/gps/hist/point 2.315 0.0338749
+/gps/hist/point 2.5041 0.0308686
+/gps/hist/point 2.7121 0.027801
+/gps/hist/point 2.9391 0.0247352
+/gps/hist/point 3.1849 0.0216973
+/gps/hist/point 3.4686 0.018628
+/gps/hist/point 3.7902 0.0156295
+/gps/hist/point 4.1495 0.0126518
+/gps/hist/point 4.5467 0.00982351
+/gps/hist/point 4.9627 0.00739026
+/gps/hist/point 5.3826 0.0056031
+/gps/hist/point 5.7798 0.00432248
+/gps/hist/point 6.211 0.00324987
+/gps/hist/point 6.6649 0.00233905
+/gps/hist/point 7.1264 0.00152442
+/gps/hist/point 7.516 0.00104207
+/gps/hist/point 7.951 0.000623623
+/gps/hist/point 8.3671 0.000300002
+/gps/hist/point 8.7831 7.59564e-07
+/gps/hist/inter Lin

@@ -1,0 +1,7 @@
+/media/vitaliy/WDC-1000GB/work/ds_ZnSe/build/CMakeFiles/install/strip.dir
+/media/vitaliy/WDC-1000GB/work/ds_ZnSe/build/CMakeFiles/install/local.dir
+/media/vitaliy/WDC-1000GB/work/ds_ZnSe/build/CMakeFiles/install.dir
+/media/vitaliy/WDC-1000GB/work/ds_ZnSe/build/CMakeFiles/list_install_components.dir
+/media/vitaliy/WDC-1000GB/work/ds_ZnSe/build/CMakeFiles/rebuild_cache.dir
+/media/vitaliy/WDC-1000GB/work/ds_ZnSe/build/CMakeFiles/edit_cache.dir
+/media/vitaliy/WDC-1000GB/work/ds_ZnSe/build/CMakeFiles/ds_ZnSe.dir

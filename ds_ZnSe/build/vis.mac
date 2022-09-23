@@ -1,0 +1,53 @@
+/vis/open OGL 1920x1080-0+0
+# Disable auto refresh and quieten vis messages whilst scene and
+# trajectories are established:
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+#
+/vis/drawVolume
+#
+/vis/viewer/set/viewpointThetaPhi 90. 180.
+#/vis/viewer/panTo 48 0 cm
+#/vis/viewer/dollyTo 0.3 m
+#
+/vis/viewer/zoom 16
+#
+/vis/viewer/set/style surface
+#/vis/viewer/set/auxiliaryEdge true
+#/vis/viewer/set/lineSegmentsPerCircle 100
+#
+#/vis/scene/add/axes 0 0 0 0.5 m
+#
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+#/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+#/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 1
+#
+# Draw hits at end of event:
+#/vis/scene/add/hits
+#
+#/vis/filtering/trajectories/create/particleFilter
+#/vis/filtering/trajectories/particleFilter-0/add gamma
+#/vis/filtering/trajectories/particleFilter-0/add e-
+#
+#/vis/filtering/trajectories/particleFilter-0/invert true
+#
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
+#/vis/modeling/trajectories/drawByParticleID-0/default/setStepPtsSize 1
+#/vis/modeling/trajectories/list
+/vis/modeling/trajectories/drawByParticleID-0/set opticalphoton cyan
+#
+/vis/geometry/set/colour World 0 0 .5 1 .1
+/vis/geometry/set/colour Scintillator 0 0 1 0 .6
+/vis/geometry/set/colour Detector 0 1 0 0 .6
+
+# To superimpose all of the events from a given run:
+/vis/scene/endOfEventAction accumulate
+#
+# Re-establish auto refreshing and verbosity:
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings
+#
+# For file-based drivers, use this to create an empty detector view:
+#/vis/viewer/flush
