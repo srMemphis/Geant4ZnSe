@@ -1,0 +1,14 @@
+# Change the default number of workers (in multi-threading mode) 
+#/run/numberOfThreads 4
+#
+
+/process/em/fluo true
+/process/em/auger true
+#/process/em/augerCascade true 
+/process/em/pixe true
+# Initialize kernel
+/run/initialize
+
+#
+/run/beamOn 50000
+

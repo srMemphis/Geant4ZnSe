@@ -1,0 +1,45 @@
+/run/verbose 2
+/run/initialize
+/control/execute ../generators_mac/gamma_generator.mac
+/gps/particle gamma
+/gps/pos/type Point
+/gps/pos/centre 0. 0. -0.2 cm
+/gps/ang/type iso
+/gps/ang/mintheta 90 deg
+/gps/ang/maxtheta 180 deg
+/gps/ene/type Mono
+/gps/ene/mono 1 MeV
+/control/execute vis.mac
+/vis/open OGL 1920x1080-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 1920x1080-0+0
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/viewer/set/viewpointThetaPhi 90. 180.
+/vis/viewer/zoom 16
+/vis/viewer/set/style surface
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByParticleID-0/set opticalphoton cyan
+/vis/scene/notifyHandlers scene-0
+/vis/geometry/set/colour World 0 0 .5 1 .1
+/vis/scene/notifyHandlers
+/vis/geometry/set/colour Scintillator 0 0 1 0 .6
+/vis/scene/notifyHandlers
+/vis/geometry/set/colour Detector 0 1 0 0 .6
+/vis/scene/notifyHandlers
+/vis/scene/endOfEventAction accumulate
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+/vis/verbose warnings
+/run/beamOn 100

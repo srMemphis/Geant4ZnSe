@@ -1,0 +1,7 @@
+/gps/particle alpha
+/gps/pos/type Point
+/gps/pos/centre 0. 0. -0.2 cm
+/gps/ang/type iso
+/gps/ang/mintheta 90 deg
+/gps/ang/maxtheta 180 deg
+
